@@ -1,5 +1,4 @@
-# MCQ Quiz - GitHub Pages
-
+# POIS Quiz 
 A simple, interactive Multiple Choice Question (MCQ) quiz with timer functionality, designed to be hosted on GitHub Pages.
 
 ## Features
@@ -17,36 +16,17 @@ A simple, interactive Multiple Choice Question (MCQ) quiz with timer functionali
 ```
 mcq-quiz/
 ├── index.html      # Main HTML structure
-├── style.css       # CSS styling and animations
-├── script.js       # JavaScript logic and quiz data
+├── styles.css       # CSS styling and animations
+├── app_logic.js       # JavaScript logic and quiz data
+├── question_answers.js # stores questions and answers 
 └── README.md       # This file
 ```
-
-## Quiz Questions
-
-The quiz includes 10 questions covering:
-- HTML fundamentals
-- CSS properties and styling
-- JavaScript basics
-- Web development concepts
-
-## How to Deploy on GitHub Pages
-
-1. **Create a new repository** on GitHub
-2. **Upload all files** (index.html, style.css, script.js) to the repository
-3. **Enable GitHub Pages**:
-   - Go to repository Settings
-   - Scroll down to "Pages" section
-   - Select "Deploy from a branch"
-   - Choose "main" branch and "/ (root)" folder
-   - Click "Save"
-4. **Access your quiz** at: `https://yourusername.github.io/repository-name`
 
 ## Customization
 
 ### Adding New Questions
 
-Edit the `quizQuestions` array in `script.js`:
+Edit the `quizData` array in `question_answers.js`:
 
 ```javascript
 const quizData = [
