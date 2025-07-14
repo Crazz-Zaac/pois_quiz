@@ -49,16 +49,17 @@ The quiz includes 10 questions covering:
 Edit the `quizQuestions` array in `script.js`:
 
 ```javascript
-const quizQuestions = [
+const quizData = [
     {
-        question: "Your question here?",
-        options: [
-            "Option A",
-            "Option B", 
-            "Option C",
-            "Option D"
+        "question": "What are valid sources of a message flow?",
+        "options": [
+            "Send task",
+            "Multiple end event",
+            "Multiple start event",
+            "Error end event"
         ],
-        correct: 0  // Index of correct answer (0-3)
+        "correct": [0, 1],
+        "type": "multiple"
     },
     // Add more questions...
 ];
@@ -66,7 +67,7 @@ const quizQuestions = [
 
 ### Styling Customization
 
-Modify `style.css` to change:
+Modify `styles.css` to change:
 - Color scheme (update CSS custom properties)
 - Typography (font families and sizes)
 - Layout and spacing
@@ -86,7 +87,7 @@ The timer starts at 00:00 and counts up. To modify timer behavior, edit the time
 
 ## Local Testing
 
-To test locally, simply open `index.html` in a web browser. All files use relative paths and will work without a web server.
+To test locally, simply open `home.html` in a web browser. All files use relative paths and will work without a web server.
 
 ## License
 
