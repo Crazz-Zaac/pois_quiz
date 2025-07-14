@@ -327,6 +327,15 @@ body {
     text-align: center;
 }
 
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
 .results-screen h2 {
     font-size: 2rem;
     color: #333;

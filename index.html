@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Quiz App</title>
+    <title>POIS Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <!-- Start Screen -->
         <div id="startScreen" class="screen active start-screen">
-            <h1>🧠 Interactive Quiz</h1>
-            <p>Test your knowledge with our comprehensive quiz system!</p>
+            <h1>🧠 POIS Quiz</h1>
+            <p>Practice for POIS exam!</p>
             
             <div class="timer-section">
                 <h3>Timer Settings</h3>
@@ -34,8 +34,9 @@
             <div id="instructions" class="instructions"></div>
             <div id="questionText" class="question-text"></div>
             <div id="optionsContainer" class="options-container"></div>
-            
+
             <div class="navigation-controls">
+                <button id="terminateBtn" class="btn btn-danger">Terminate Quiz</button>
                 <button id="checkAnswerBtn" class="btn btn-secondary">Check Answer</button>
                 <button id="prevBtn" class="btn btn-secondary">Previous</button>
                 <button id="nextBtn" class="btn btn-primary">Next</button>

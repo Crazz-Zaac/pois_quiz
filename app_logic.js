@@ -50,6 +50,7 @@ class QuizApp {
         this.startScreen = document.getElementById('startScreen');
         this.questionContainer = document.getElementById('questionContainer');
         this.resultsContainer = document.getElementById('resultsContainer');
+        this.terminateBtn = document.getElementById('terminateBtn');
         
         // Timer elements
         this.timerInput = document.getElementById('timerInput');
@@ -93,6 +94,12 @@ class QuizApp {
         this.restartBtn.addEventListener('click', () => this.restartQuiz());
         this.toggleNavBtn.addEventListener('click', () => this.toggleNavigation());
         this.overlay.addEventListener('click', () => this.toggleNavigation());
+        this.terminateBtn.addEventListener('click', () => this.terminateQuiz());
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.questionContainer.classList.contains('active')) {
+                this.terminateQuiz();
+            }
+        });
     }
 
     initializeAnswers() {
@@ -120,6 +127,11 @@ class QuizApp {
         this.questionContainer.classList.add('active');
         this.createNavigation();
         this.loadQuestion();
+    }
+    terminateQuiz() {
+        if (confirm("Are you sure you want to end the quiz early? Your progress will be saved.")) {
+            this.endQuiz();
+        }
     }
 
     createNavigation() {
