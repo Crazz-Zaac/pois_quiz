@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active start-screen">
+            <h1>🧠 Interactive Quiz</h1>
+            <p>Test your knowledge with our comprehensive quiz system!</p>
+            
+            <div class="timer-section">
+                <h3>Timer Settings</h3>
+                <label for="timerInput">Time limit (minutes):</label>
+                <input type="number" id="timerInput" class="timer-input" min="1" max="60" value="10">
+                <p>Set a time limit for the entire quiz (optional)</p>
+            </div>
+            
+            <button id="startWithTimer" class="btn btn-primary">Start with Timer</button>
+            <button id="startWithoutTimer" class="btn btn-secondary">Start without Timer</button>
+        </div>
+
+        <!-- Question Screen -->
+        <div id="questionContainer" class="screen question-container">
+            <div class="question-header">
+                <div id="questionCounter" class="question-counter"></div>
+                <button id="toggleNav" class="nav-toggle">Show Question Navigator</button>
+            </div>
+            
+            <div id="instructions" class="instructions"></div>
+            <div id="questionText" class="question-text"></div>
+            <div id="optionsContainer" class="options-container"></div>
+            
+            <div class="navigation-controls">
+                <button id="checkAnswerBtn" class="btn btn-secondary">Check Answer</button>
+                <button id="prevBtn" class="btn btn-secondary">Previous</button>
+                <button id="nextBtn" class="btn btn-primary">Next</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsContainer" class="screen results-screen">
+            <h2>Quiz Complete!</h2>
+            <div id="finalScore" class="score-display"></div>
+            <div id="resultsText" class="results-text"></div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div id="correctCount" class="stat-value"></div>
+                    <div class="stat-label">Correct</div>
+                </div>
+                <div class="stat-item">
+                    <div id="wrongCount" class="stat-value"></div>
+                    <div class="stat-label">Wrong</div>
+                </div>
+                <div class="stat-item">
+                    <div id="timeTaken" class="stat-value"></div>
+                    <div class="stat-label">Time</div>
+                </div>
+            </div>
+            
+            <button id="restartBtn" class="btn btn-primary">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <!-- Timer Display -->
+    <div id="timerDisplay" class="timer-display">
+        <div>⏱️ Time Remaining</div>
+        <div id="timeRemaining" style="font-size: 1.5rem; font-weight: bold; color: #333;"></div>
+    </div>
+
+    <!-- Navigation Panel -->
+    <div id="navigationPanel" class="navigation-panel">
+        <div class="nav-header">Question Navigator</div>
+        <div id="navGrid" class="nav-grid"></div>
+    </div>
+
+    <!-- Overlay for navigation -->
+    <div id="overlay" class="overlay"></div>
+
+    <script src="question_answers.js"></script>
+    <script src="app_logic.js"></script>
+    <script>
+        // Initialize the quiz when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new QuizApp(quizData);
+        });
+    </script>
+</body>
+</html>

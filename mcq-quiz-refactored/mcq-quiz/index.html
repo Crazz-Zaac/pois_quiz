@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MCQ Quiz</h1>
+            <div class="quiz-info">
+                <div class="timer-section">
+                    <span class="timer-label">Time:</span>
+                    <span id="timer">00:00</span>
+                    <button id="start-timer" class="timer-btn">Start Timer</button>
+                    <button id="stop-timer" class="timer-btn" disabled>Stop Timer</button>
+                    <button id="reset-timer" class="timer-btn">Reset Timer</button>
+                </div>
+                <div class="score-section">
+                    <span class="score-label">Score:</span>
+                    <span id="score">0/0</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="quiz-container">
+            <div id="welcome-screen" class="screen active">
+                <h2>Welcome to the MCQ Quiz!</h2>
+                <p>Test your knowledge with our multiple choice questions.</p>
+                <p>Click "Start Quiz" to begin. You can optionally start the timer to track your progress.</p>
+                <button id="start-quiz" class="btn btn-primary">Start Quiz</button>
+            </div>
+
+            <div id="quiz-screen" class="screen">
+                <div class="question-header">
+                    <span id="question-number">Question 1 of 10</span>
+                    <span id="question-progress">Progress: 0%</span>
+                </div>
+                
+                <div class="question-container">
+                    <h3 id="question-text">Question will appear here</h3>
+                    
+                    <div id="options-container" class="options">
+                        <div class="option" data-option="A">
+                            <input type="radio" id="option-a" name="answer" value="A">
+                            <label for="option-a">
+                                <span class="option-letter">A</span>
+                                <span class="option-text">Option A</span>
+                            </label>
+                        </div>
+                        <div class="option" data-option="B">
+                            <input type="radio" id="option-b" name="answer" value="B">
+                            <label for="option-b">
+                                <span class="option-letter">B</span>
+                                <span class="option-text">Option B</span>
+                            </label>
+                        </div>
+                        <div class="option" data-option="C">
+                            <input type="radio" id="option-c" name="answer" value="C">
+                            <label for="option-c">
+                                <span class="option-letter">C</span>
+                                <span class="option-text">Option C</span>
+                            </label>
+                        </div>
+                        <div class="option" data-option="D">
+                            <input type="radio" id="option-d" name="answer" value="D">
+                            <label for="option-d">
+                                <span class="option-letter">D</span>
+                                <span class="option-text">Option D</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <button id="prev-btn" class="btn btn-secondary" disabled>Previous</button>
+                    <button id="next-btn" class="btn btn-primary">Next</button>
+                    <button id="submit-quiz" class="btn btn-success" style="display: none;">Submit Quiz</button>
+                </div>
+            </div>
+
+            <div id="results-screen" class="screen">
+                <h2>Quiz Results</h2>
+                <div class="results-summary">
+                    <div class="result-item">
+                        <span class="result-label">Final Score:</span>
+                        <span id="final-score" class="result-value">0/0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Percentage:</span>
+                        <span id="percentage" class="result-value">0%</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Time Taken:</span>
+                        <span id="time-taken" class="result-value">00:00</span>
+                    </div>
+                </div>
+                
+                <div class="results-details">
+                    <h3>Question Review</h3>
+                    <div id="question-review"></div>
+                </div>
+
+                <div class="results-actions">
+                    <button id="restart-quiz" class="btn btn-primary">Restart Quiz</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
