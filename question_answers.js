@@ -248,5 +248,115 @@ const quizData = [
         ],
         "correct": [0],
         "type": "multiple"
+    },
+    {
+        "question": "To handle the process instance-activity alignment problem, a process is split up into a single-instance and a multi-instance pool. How can one of the multi-instance pool instances notify the single-instance process pool that the overall process can be finished successfully?",
+        "options": [
+            "Via cancel event",
+            "Via signal event",
+            "Via error event",
+            "Via message event"
+        ],
+        "correct": [1, 3],
+        "type": "multiple"
+    },
+    {
+        "question": "To handle the process instance-activity alignment problem, a process is split up into a single-instance and a multi-instance pool. How can the process instance of the single-instance pool notify all multi-instance pool instances that they can be cancelled because the overall process has to be finished?",
+        "options": [
+            "Via Cancel Event",
+            "Via Signal Event",
+            "Via Error Event",
+            "Via Message Event"
+        ],
+        "correct": [1],
+        "type": "multiple"
+    },
+    {
+        "question": "The process instance-activity alignment problem occurs when there is no 1:1 correspondence between activity instances across an entire end-to-end process. Which statements concerning this alignment problem are correct?",
+        "options": [
+            "To apply the process instance-activity alignment handling, one involved process instance must be finished before another involved one can start.",
+            "You can handle the process instance-activity alignment by splitting the end-to-end process across multiple BPMN process pools.",
+            "The process instance-activity alignment problem occurs when there are repeating activities in a process but one does not know how many repetitions of these activities will be required.",
+            "You can handle the process instance-activity alignment in a single pool by using different repeating activities."
+        ],
+        "correct": [1, 2],
+        "type": "multiple"
+    },
+    {
+        "question": "The process instance-activity alignment problem occurs when there is no 1:1 correspondence between activity instances across an entire end-to-end process. Which statements concerning the BPMN elements used to solve this problem are correct?",
+        "options": [
+            "Communication via a single pair of message events only ever works between exactly two process instances.",
+            "A multi-instance activity always needs to know the number of iterations in advance.",
+            "Two separate process pools always represent two independent BPMN processes.",
+            "Communication via a single pair of signal events always works only between at least three process instances."
+        ],
+        "correct": [0, 1, 2],
+        "type": "multiple"
+    },
+    {
+        "question": "To handle the process instance-activity alignment problem, a process is split up into a single-instance and a multi-instance pool. How can the data interchange between these pools be modelled?",
+        "options": [
+            "Via simple data objects",
+            "Via a data-collection object",
+            "Via a data store",
+            "Via data input and data output objects"
+        ],
+        "correct": [2],
+        "type": "multiple"
+    },
+    {
+        "question": "Which statements concerning the labeling and usage of end events in a BPMN process are correct?",
+        "options": [
+            "Indicate success end states and exception end states of a process with separate end events.",
+            "Label end events to indicate the corresponding end state.",
+            "If you have two collaborating pools in your model, there should be at least one end event in each pool whose label corresponds to the label of an end event in the other pool.",
+            "A sub-process should always have a single none end event."
+        ],
+        "correct": [0, 1],
+        "type": "multiple"
+    },
+    {
+        "question": "Which of the following statements apply for the beginning of customer-facing processes interacting with a black-box customer pool?",
+        "options": [
+            "Model a message start event that receives a message flow from the black-box customer pool.",
+            "Model a parallel multiple start event waiting for a message from the customer pool and a timeout.",
+            "Model a none start event in the customer lane of a single pool for the whole process.",
+            "Model several start events in order to cover all possible start situations."
+        ],
+        "correct": [0],
+        "type": "multiple"
+    },
+    {
+        "question": "Which of the following statements concerning the usage of gateways according to Bruce Silver are correct?",
+        "options": [
+            "Omit parallel join in front of none end events.",
+            "Try to avoid using inclusive gateways.",
+            "Use a complex gateway only to split the process logic, but not to join different paths.",
+            "Combine splitting and joining functionality in a single gateway as often as possible."
+        ],
+        "correct": [0],
+        "type": "multiple"
+    },
+    {
+        "question": "Which statements concerning the labeling and usage of intermediate events in a BPMN process are correct?",
+        "options": [
+            "Label intermediate events verb-noun.",
+            "Paired Link events should have matching labels.",
+            "An intermediate event in an event sub-process must have a none trigger.",
+            "Two intermediate events at the same process level should not have the same label."
+        ],
+        "correct": [1],
+        "type": "multiple"
+    },
+    {
+        "question": "Which statements concerning the usage and labeling of pools and lanes are correct?",
+        "options": [
+            "Model internal organizational units as lanes within a single pool.",
+            "Label lanes with the name of a process.",
+            "Model independent processes as separate pools.",
+            "Label black-box pools with a participant role or business entity."
+        ],
+        "correct": [0, 2, 3],
+        "type": "multiple"
     }
 ];
