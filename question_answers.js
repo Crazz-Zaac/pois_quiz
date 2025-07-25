@@ -525,7 +525,7 @@ const quizData = [
     "correct": [0, 2],
     "type": "multiple"
     },
-        {
+    {
     "question": "In general, patterns are reusable solutions to commonly occurring problems within a given context. In our course, we used enterprise integration patterns to harmonize the interfaces between the PDA and the back-end systems of the IT landscape. Which of the following statements regarding the resequencer pattern are correct?",
     "options": [
         "The resequencer pattern is able to buffer messages that are received out of sequence.",
@@ -534,6 +534,39 @@ const quizData = [
         "The resequencer pattern is a stateless pattern."
     ],
     "correct": [0, 2],
+    "type": "multiple"
+    },
+    {
+    "question": "In general, patterns are reusable solutions to commonly occurring problems within a given context. In our course, we used enterprise integration patterns to harmonize the interfaces between the PDA and the back-end systems of the IT landscape. Which of the following statements regarding pattern \"Async-Sync Bridge\" are correct?",
+    "options": [
+        "Use an async-sync bridge when the back-end system (service provider) provides the response only synchronously.",
+        "Use an async-sync bridge when the PDA requests a service only asynchronously.",
+        "The async-sync bridge keeps alive the technical connection to the PDA, which is the service requester.",
+        "The async-sync bridge keeps alive the technical connection to the back-end system which is the service provider."
+    ],
+    "correct": [0, 1, 3],
+    "type": "multiple"
+    },
+    {
+    "question": "In general, patterns are reusable solutions to commonly occurring problems within a given context. In our course, we used enterprise integration patterns to harmonize the interfaces between the PDA and the back-end systems of the IT landscape. We have got to know composition patterns and integration-centric patterns. Which of the following patterns can be classified as composition patterns?",
+    "options": [
+        "Async-Sync Bridge",
+        "Resequencer Pattern",
+        "Aggregator Pattern",
+        "Asynchronous Polling"
+    ],
+    "correct": [0, 3],
+    "type": "multiple"
+    },
+        {
+    "question": "In general, patterns are reusable solutions to commonly occurring problems within a given context. In our course, we used enterprise integration patterns to harmonize the interfaces between the PDA and the back-end systems of the IT landscape. Which of the following statements regarding pattern \"Asynchronous Polling\" are correct?",
+    "options": [
+        "A technical integration process implementing asynchronous polling repeatedly sends a request to the back-end system (service provider) until there is a response.",
+        "Use asynchronous polling when the back-end system has to be addressed asynchronously.",
+        "Use asynchronous polling when the back-end system automatically sends push notifications",
+        "A technical integration process implementing asynchronous polling can forward the service request to the back-end system (service provider) without any modification."
+    ],
+    "correct": [0, 1, 3],
     "type": "multiple"
     }
     
