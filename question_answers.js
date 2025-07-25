@@ -358,5 +358,39 @@ const quizData = [
         ],
         "correct": [0, 2, 3],
         "type": "multiple"
+    },
+    {
+    "question": "Which of the following statements describe a tight coupling between two systems?",
+    "options": [
+        "The communication style is synchronous and not asynchronous.",
+        "The versioning is done via explicit upgrades and not via implicit upgrades.",
+        "There is a strong type system instead of a weak type system.",
+        "The transactional behaviour is according to compensation and not according to the 2-phase-commit protocol."
+    ],
+    "correct": [0, 1, 2],
+    "type": "multiple"
+    },
+    {
+    "question": "Which of the following statements concerning the methodology of PDAs are correct?",
+    "options": [
+        "The PDA architecture aims for independence from back-end systems and highest flexibility regarding process changes as well as IT landscape changes.",
+        "The reuse of existing functionality does not necessarily require the availability of web services.",
+        "The PDA architecture basically differentiates between user processes and business rules processes.",
+        "The essential artefacts of a PDA can be derived by following a bottom-up-oriented methodology."
+    ],
+    "correct": [0, 1],
+    "type": "multiple"
+    },
+    {
+    "question": "Which statements concerning architectures with software integration are correct?",
+    "options": [
+        "Architectures with integration software have an increased complexity concerning testing and software distribution.",
+        "In architectures with integration software business process model and the executed process model are almost identical.",
+        "Architectures with integration software allow simpler process models for both business and integration process.",
+        "Architectures with integration software have low initial costs, but the maintenance is expensive."
+    ],
+    "correct": [0, 1, 2],
+    "type": "multiple"
     }
+    
 ];
