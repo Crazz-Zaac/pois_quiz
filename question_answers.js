@@ -25,8 +25,20 @@ const quizData = [
     },
     {
         "question": "Which statements concerning the default sequence flow in BPMN are correct?",
-        "options": ["A default sequence flow is always taken.", "A default sequence should not have a condition. Any such conditions shall be ignored.", "An event-based gateway cannot have a default sequence flow.", "It is good practice to also label a default sequence flow, as labeling can help show the current state of the process and explain what will happen in the case when the default sequence flow is taken."],
+        "options": ["A default sequence flow is always taken.", 
+                    "A default sequence should not have a condition. Any such conditions shall be ignored.", 
+                    "An event-based gateway cannot have a default sequence flow.", 
+                    "It is good practice to also label a default sequence flow, as labeling can help show the current state of the process and explain what will happen in the case when the default sequence flow is taken."],
         "correct": [1],
+        "type": "multiple"
+    },
+    {
+        "question": "Which statements concerning the default sequence flow in BPMN are correct?",
+        "options": ["It is good practice to also label a default sequence flow, as labeling can help show the current state of the process and explain what will happen in the case when the default sequence flow is taken.", 
+                    "A default sequence flow out of an exclusive gateway is taken only if the conditions of all the other outgoing sequence flows of this gateway evaluate to false.", 
+                    "A parallel gateway can have multiple outgoing default sequence flows.", 
+                    "A default sequence flow out of an inclusive gateway is always taken because an inclusive gateway can send tokens to several outgoing sequence flows at a time."],
+        "correct": [0, 1],
         "type": "multiple"
     },
     {
@@ -40,6 +52,17 @@ const quizData = [
         "correct": [0, 1],
         "type": "multiple"
     },
+        {
+        "question": "Which of the following boundary types are valid activity boundaries?",
+        "options": [
+            "A single boundary line that is thin and dotted.",
+            "A single boundary line that is thick and solid.",
+            "A single boundary line that is thin and solid.",
+            "A double boundary line that is thin and solid."
+        ],
+        "correct": [0, 1, 2, 3],
+        "type": "multiple"
+    },
     {
         "question": "Which statements concerning the boundary of a BPMN event shape are correct?",
         "options": [
@@ -49,6 +72,17 @@ const quizData = [
             "A double thin and solid boundary line indicates an interrupting intermediate event."
         ],
         "correct": [0, 1, 2, 3],
+        "type": "multiple"
+    },
+    {
+        "question": "Which statements concerning the boundary of a BPMN event shape are correct?",
+        "options": [
+            "A double thin and dashed boundary line indicates a non-interrupting intermediate event.",
+            "A single thin and dashed boundary line indicates an interrupting start event.",
+            "A single thin and solid boundary line indicates an interrupting start event.",
+            "A double thin and solid boundary line indicates an interrupting intermediate event."
+        ],
+        "correct": [0, 2, 3],
         "type": "multiple"
     },
     {
@@ -170,6 +204,17 @@ const quizData = [
             "Multiple end event"
         ],
         "correct": [0, 1],
+        "type": "multiple"
+    },
+    {
+        "question": "Which of the following events have to be always interrupting?",
+        "options": [
+            "Message start event",
+            "Multiple start event",
+            "Intermediate conditional event",
+            "Message end event"
+        ],
+        "correct": [3],
         "type": "multiple"
     },
     {
@@ -391,6 +436,73 @@ const quizData = [
     ],
     "correct": [0, 1, 2],
     "type": "multiple"
+    },
+    {
+    "question": "Which of the following statements concerning orchestration and collaboration in BPMN  are correct?",
+    "options": [
+        "Orchestration in BPMN means the sequence flow within a pool.",
+        "Sequence flow in BPMN can be modeled between different lanes within a single pool.",
+        "Collaboration in BPMN means the interaction between different pools by message flow.",
+        "Message flow in BPMN can be modeled inside a single pool as well as between different pools."
+    ],
+    "correct": [0, 1, 2],
+    "type": "multiple"
+    },
+    {
+    "question": "Which statements concerning user tasks and manual tasks are correct?",
+    "options": [
+        "Filling out a contact form on a website is an example of a user task.",
+        "Participation in an electronic exam is an example of a manual task",
+        "A user task is performed solely by a user, i.e. no software system is involved in any way.",
+        "Manual tasks are always fulfilled with software support, but must be triggered manually."
+    ],
+    "correct": [0],
+    "type": "multiple"
+    },
+    {
+    "question": "Which statements concerning events in BPMN are correct?",
+    "options": [
+        "Escalation events are never end events.",
+        "Error events are always catching events.",
+        "End events can be of catching as well as throwing type.",
+        "Start events are always catching events."
+    ],
+    "correct": [3],
+    "type": "multiple"
+    },
+    {
+    "question": "Which statements concerning events in BPMN are correct?",
+    "options": [
+        "A process definition is a specific occurrence or execution of a business process.",
+        "A certain process definition can be instantiated multiple times.",
+        "A process definition shows all available information about a business process, such as all possible control flow paths.",
+        "A model containing a BPMN diagram represents a process instance and not a process definition."
+    ],
+    "correct": [1,2],
+    "type": "multiple"
+    },
+    {
+    "question": "Which statements concerning the conditional sequence flow in BPMN are correct?",
+    "options": [
+        "A conditional sequence flow is taken only if the conditions of all the other outgoing sequence flows of a gateway evaluate to false.",
+        "An exclusive gateway is semantically completely identical to the conditional flow.",
+        "A parallel gateway can have multiple conditional sequence flows.",
+        "An inclusive gateway is semantically completely identical to the conditional flow."
+    ],
+    "correct": [3],
+    "type": "multiple"
+    },    
+    {
+    "question": "Which statements concerning the different communication styles in BPMN are correct?",
+    "options": [
+        "You can also use simple data objects for communication by parameter passing to and from a calling sub-process.",
+        "Communication based on a data flow between independent process instances is only possible via data stores and not via simple data objects.",
+        "In contrast to simple data objects, the data input and output objects of a process symbolize its interface, i.e. the data that is forwarded to and delivered from the related process instances.",
+        "Collaboration via message flow means an asynchronous way for communication whereas communication via calling activities means a synchronous way for communication."
+    ],
+    "correct": [1, 2, 3],
+    "type": "multiple"
     }
+    
     
 ];
