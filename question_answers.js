@@ -502,7 +502,39 @@ const quizData = [
     ],
     "correct": [1, 2, 3],
     "type": "multiple"
+    },
+    {
+    "question": "In general, patterns are reusable solutions to commonly occurring problems within a given context. In our course, we used enterprise integration patterns to harmonize the interfaces between the PDA and the back-end systems of the IT landscape. We have got to know composition patterns and integration-centric patterns. Which of the following patterns can be classified as integration-centric patterns?",
+    "options": [
+        "Aggregator Pattern",
+        "Sync-Async Bridge",
+        "Resequencer Pattern",
+        "Integration-Centric Polling"
+    ],
+    "correct": [0, 2],
+    "type": "multiple"
+    },
+    {
+    "question": "In general, patterns are reusable solutions to commonly occurring problems within a given context. In our course, we used enterprise integration patterns to harmonize the interfaces between the PDA and the back-end systems of the IT landscape. Which of the following statements regarding these patterns are correct?",
+    "options": [
+        "Asynchronous polling asynchronously addresses a back-end system that does not send any replies automatically by itself.",
+        "The aggregator pattern gets a stream of related but out-of-sequence messages back into the correct order.",
+        "The request-reply pattern forwards an incoming service request to the service provider, waits for the outstanding reply, and finally forwards it to the service requester after adjusting some protocol and format details",
+        "The async-sync bridge keeps alive the technical connection to the PDA, which is the service requester."
+    ],
+    "correct": [0, 2],
+    "type": "multiple"
+    },
+        {
+    "question": "In general, patterns are reusable solutions to commonly occurring problems within a given context. In our course, we used enterprise integration patterns to harmonize the interfaces between the PDA and the back-end systems of the IT landscape. Which of the following statements regarding the resequencer pattern are correct?",
+    "options": [
+        "The resequencer pattern is able to buffer messages that are received out of sequence.",
+        "The resequencer pattern buffers all messages in a sequence and sends them in the correct order once all messages have been received.",
+        "The resequencer pattern gets a stream of related but out-of-sequence messages back into the correct order.",
+        "The resequencer pattern is a stateless pattern."
+    ],
+    "correct": [0, 2],
+    "type": "multiple"
     }
-    
     
 ];
