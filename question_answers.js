@@ -29,7 +29,7 @@ const quizData = [
                     "A default sequence should not have a condition. Any such conditions shall be ignored.", 
                     "An event-based gateway cannot have a default sequence flow.", 
                     "It is good practice to also label a default sequence flow, as labeling can help show the current state of the process and explain what will happen in the case when the default sequence flow is taken."],
-        "correct": [1],
+        "correct": [1, 2, 3],
         "type": "multiple"
     },
     {
@@ -49,7 +49,7 @@ const quizData = [
             "A single boundary line that is thin and dotted-dashed.",
             "A single boundary line that is thick and solid."
         ],
-        "correct": [0, 1],
+        "correct": [0],
         "type": "multiple"
     },
         {
@@ -72,6 +72,17 @@ const quizData = [
             "A double thin and solid boundary line indicates an interrupting intermediate event."
         ],
         "correct": [0, 1, 2, 3],
+        "type": "multiple"
+    },
+    {
+        "question": "Which statements concerning the different communication styles in BPMN are correct?",
+        "options": [
+            "In contrast to simple data objects, the data input and output objects of a process symbolize its interface, i.e. the data that is forwarded to and delivered from the related process instances.",
+            "You can also use simple data objects for communication by parameter passing to and from a calling sub-process.",
+            "Collaboration via message flow means an asynchronous way for communication whereas communication via calling activities means a synchronous way for communication.",
+            "Communication based on a data flow between independent process instances is only possible via data stores and not via simple data objects."
+        ],
+        "correct": [0, 2, 3],
         "type": "multiple"
     },
     {
@@ -104,7 +115,7 @@ const quizData = [
             "Complex gateway",
             "Inclusive gateway"
         ],
-        "correct": [2, 3],
+        "correct": [3],
         "type": "multiple"
     },
     {
@@ -229,6 +240,17 @@ const quizData = [
         "type": "multiple"
     },
     {
+        "question": "What are valid sources of a message flow?",
+        "options": [
+            "Multiple end event",
+            "Send Task",
+            "Multiple start event",
+            "Error end event"
+        ],
+        "correct": [0, 1],
+        "type": "multiple"
+    },
+    {
         "question": "Which of the following shapes can follow after an event-based gateway?",
         "options": [
             "Conditional event",
@@ -240,6 +262,28 @@ const quizData = [
         "type": "multiple"
     },
     {
+        "question": "Which of the following shapes can follow after an event-based gateway?",
+        "options": [
+            "Terminate end event",
+            "Signal event",
+            "Receive task",
+            "Signal end event"
+        ],
+        "correct": [1, 2],
+        "type": "multiple"
+    },
+    {
+        "question": "Which of the following start events are allowed only for event sub-processes, but not at top-level?",
+        "options": [
+            "Interrupting escalation start event",
+            "Interrupting cancel start event",
+            "Interrupting signal start event",
+            "Interrupting conditional start event"
+        ],
+        "correct": [0],
+        "type": "multiple"
+    },
+    {
         "question": "Which statements concerning the difference between a standard and a transactional sub-process are correct?",
         "options": [
             "Link events are only allowed within a standard sub-process.",
@@ -248,6 +292,83 @@ const quizData = [
             "In transactional sub-processes only service tasks are allowed."
         ],
         "correct": [1],
+        "type": "multiple"
+    },
+    {
+        "question": "Which of the following start events are allowed in an ordinary standard sub-process?",
+        "options": [
+            "Terminate start event",
+            "A signal start event",
+            "A message start event",
+            "A none start event"
+        ],
+        "correct": [3],
+        "type": "multiple"
+    },
+    {
+        "question": "Which of the following catching intermediate events cannot be attached to the boundary of an activity, but can only be used in the normal flow of a process?",
+        "options": [
+            "	Intermediate conditional event",
+            "	Intermediate multiple event",
+            "	Intermediate signal event",
+            "	Intermediate link event"
+        ],
+        "correct": [3],
+        "type": "multiple"
+    },
+    {
+        "question": "A task in BPMN may have a type. Which of the following global task types are valid?",
+        "options": [
+            "	Global business-rule task",
+            "	Global script task",
+            "	Global business task",
+            "	Global receive task"
+        ],
+        "correct": [0, 1, 2],
+        "type": "multiple"
+    },
+    {
+        "question": "Which statements concerning an inclusive gateway in BPMN are correct?",
+        "options": [
+            "	The inclusive gateway throws an exception in case all conditions evaluate to false and a default flow has not been specified.",
+            "	The evaluation of the conditions on the outgoing sequence flows of an inclusive gateway must respect a certain order.",
+            "	For every condition on an outgoing sequence flow of an inclusive gateway which evaluates to true, a token must be passed on the respective outgoing sequence flow.",
+            "	If the conditions of all outgoing sequence flows of an inclusive gateway evaluate as true, this gateway could be equivalently replaced by a parallel gateway."
+        ],
+        "correct": [0, 2, 3],
+        "type": "multiple"
+    },
+    {
+        "question": "Which statements concerning the default sequence flow in BPMN are correct?",
+        "options": [
+            "	A default sequence flow is taken only if all the other outgoing sequence flows from the gateway are not valid.",
+            "	Exclusive and inclusive gateways may have several outgoing default sequence flows.",
+            "	A condition for a default sequence flow shall be ignored.",
+            "	Only a gateway may have an outgoing default sequence flow, an activity cannot have one."
+        ],
+        "correct": [0, 2],
+        "type": "multiple"
+    },
+    {
+        "question": "Which of the following intermediate events cannot be used in the normal flow of a process, but can only be attached to the boundary of an activity?",
+        "options": [
+            "	Intermediate error event",
+            "		Intermediate conditional event",
+            	"Intermediate signal event",    
+            	"Intermediate parallel multiple event"
+        ],
+        "correct": [0],
+        "type": "multiple"
+    },
+    {
+        "question": "To which of the following events is an outgoing sequence flow of an event-based gateway allowed to lead?",
+        "options": [
+            "		Intermediate cancel event",
+            "		Intermediate error event",
+            	"Intermediate multiple event",    
+            	"Intermediate compensation event"
+        ],
+        "correct": [2],
         "type": "multiple"
     },
     {
