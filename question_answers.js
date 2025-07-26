@@ -558,13 +558,79 @@ const quizData = [
     "correct": [0, 3],
     "type": "multiple"
     },
-        {
+    {
     "question": "In general, patterns are reusable solutions to commonly occurring problems within a given context. In our course, we used enterprise integration patterns to harmonize the interfaces between the PDA and the back-end systems of the IT landscape. Which of the following statements regarding pattern \"Asynchronous Polling\" are correct?",
     "options": [
         "A technical integration process implementing asynchronous polling repeatedly sends a request to the back-end system (service provider) until there is a response.",
         "Use asynchronous polling when the back-end system has to be addressed asynchronously.",
         "Use asynchronous polling when the back-end system automatically sends push notifications",
         "A technical integration process implementing asynchronous polling can forward the service request to the back-end system (service provider) without any modification."
+    ],
+    "correct": [0, 1, 3],
+    "type": "multiple"
+    },
+    {
+    "question": "Which of the following statements concerning the handling of business processes by different software systems based on their differentiation and risk are correct?",
+    "options": [
+        "Handle business processes with low differentiation and low risk by cloud service applications.",
+        "Handle business processes with high differentiation and low risk by database systems.",
+        "Handle business processes with high differentiation and high risk by standard software.",
+        "Handle business processes with low differentiation and high risk by process-driven applications."
+    ],
+    "correct": [0],
+    "type": "multiple"
+    },
+    {
+    "question": "Which of the following aspects are considered in the key question of Business Process Management (BPM)?",
+    "options": [
+        "Functional Aspect",
+        "Data-Oriented Aspect",
+        "Sales-Oriented Aspect",
+        "Behavioral Aspect"
+    ],
+    "correct": [0, 1, 3],
+    "type": "multiple"
+    },
+    {
+    "question": "Which of the following statements concerning Business Process Management (BPM) within a company are correct?",
+    "options": [
+        "BPM is for documenting and controlling processes, but not for their monitoring.",
+        "BPM should be introduced in companies as an end itself.",
+        "BPM concerns only processes that can be automated by a process engine.",
+        "BPM concerns not just process components, but an entire process."
+    ],
+    "correct": [3],
+    "type": "multiple"
+    },
+    {
+    "question": "Which of the following steps belong to the Business Process Management (BPM) life-cycle?",
+    "options": [
+        "Execution",
+        "Integration",
+        "Monitoring",
+        "Design"
+    ],
+    "correct": [0, 2, 3],
+    "type": "multiple"
+    },
+    {
+    "question": "Which of the following roles are among the consumers of a process model mentioned in this course?",
+    "options": [
+        "Process Analyst",
+        "Process Owner",
+        "Process Explorer",
+        "Process Manager"
+    ],
+    "correct": [0, 1, 3],
+    "type": "multiple"
+    },
+    {
+    "question": "Which of the following roles are among the consumers of a process model mentioned in this course?",
+    "options": [
+        "Process Analyst",
+        "Process Owner",
+        "Process Explorer",
+        "Process Manager"
     ],
     "correct": [0, 1, 3],
     "type": "multiple"
