@@ -667,6 +667,160 @@ const quizData = [
     ],
     "correct": [0, 1, 2],
     "type": "multiple"
+    },
+    {
+    "question": "What defines an XSD?",
+    "options": [
+        "The nesting structure of elements",
+        "Elements and attributes that can appear in a document.",
+        "The namespace to use.",
+        "The uniquely named root element."
+    ],
+    "correct": [0, 1, 3],
+    "type": "multiple"
+    },
+    {
+    "question": "What is the main purpose of WSDL?",
+    "options": [
+        "Lightweight communication protocol for Web Service applications.",
+        "Registry Service for technical discovery of Web Services.",
+        "System architecture for Web Services.",
+        "Description of Web Service Interfaces in XML."
+    ],
+    "correct": [3],
+    "type": "multiple"
+    },
+    {
+    "question": "Which attribute defines the name prefix for an XML namespace?",
+    "options": [
+        "xsi",
+        "xs",
+        "xmlns",
+        "namespace"
+    ],
+    "correct": [2],
+    "type": "multiple"
+    },
+    {
+    "question": "What are the two main parts of a WSDL document?",
+    "options": [
+        "Definition part and execution part.",
+        "Architecture part and binding part.",
+        "Abstract part and concrete part.",
+        "Registry part and communication part."
+    ],
+    "correct": [2],
+    "type": "multiple"
+    },
+    {
+    "question": "What are characteristics of a well-formed XML document?",
+    "options": [
+        "A well-formed XML document is non-empty.",
+        "A well-formed XML document complies with XML rules.",
+        "A well-formed XML document does not repeat an attribute within a tag.",
+        "A well-formed XML document has only imported documents that are valid."
+    ],
+    "correct": [0, 1, 2],
+    "type": "multiple"
+    },
+    {
+    "question": "What does SOAP stand for?",
+    "options": [
+        "Simple Object Access Protocol.",
+        "Security Offline Alignment Program.",
+        "Server Online Array Platform.",
+        "Service Output Application Process."
+    ],
+    "correct": [0],
+    "type": "multiple"
+    },
+    {
+    "question": "What is the purpose of the namespace URI?",
+    "options": [
+        "To define a unique source for the related XML document.",
+        "To give the namespace a unique name.",
+        "To deliver an XML Schema definition (XSD) for the parser.",
+        "To give a formal description of the namespace."
+    ],
+    "correct": [1],
+    "type": "multiple"
+    },
+    {
+    "question": "What is the purpose of an XML Schema Definition (XSD)?",
+    "options": [
+        "Ensure an XML document's conformance to a DTD.",
+        "Describe the structure of an XML document.",
+        "Ensure the validness of an XML document.",
+        "Avoid element name conflicts in XML documents."
+    ],
+    "correct": [1, 2],
+    "type": "multiple"
+    },
+    {
+    "question": "What does WSDL stand for?",
+    "options": [
+        "Wireless Status Development Logic.",
+        "Windows Service Definition Level.",
+        "Web Services Description Language.",
+        "Widget Security Debug Link."
+    ],
+    "correct": [2],
+    "type": "multiple"
+    },
+    {
+    "question": "What is the main purpose of XML namespaces?",
+    "options": [
+        "Ensure the well-formedness of XML documents.",
+        "Avoid element name conflicts in XML documents.",
+        "Define constraints for the textual content of elements and attributes.",
+        "Ensure the validness of XML documents."
+    ],
+    "correct": [1],
+    "type": "multiple"
+    },
+    {
+    "question": "What are the main characteristics of SOAP messages?",
+    "options": [
+        "A SOAP message must use the SOAP Encoding namespace.",
+        "A SOAP message usually transports payload data in its body.",
+        "A SOAP message must contain a DTD reference.",
+        "A SOAP message is a one-way transmission."
+    ],
+    "correct": [0, 1, 3],
+    "type": "multiple"
+    },
+    {
+    "question": "What are general characteristics of Web Services?",
+    "options": [
+        "They support loose coupling of existing software.",
+        "They communicate using standard internet protocols.",
+        "They deliberately omit functionality implementation details.",
+        "They are based upon DTD."
+    ],
+    "correct": [0, 1, 2],
+    "type": "multiple"
+    },
+    {
+    "question": "What does UDDI stand for?",
+    "options": [
+        "URL Dynamic Domain Iteration.",
+        "Universal Description, Discovery and Integration.",
+        "Unified Debug Development Invariant.",
+        "User Document Database Interface."
+    ],
+    "correct": [1],
+    "type": "multiple"
+    },
+    {
+    "question": "What is the main purpose of UDDI?",
+    "options": [
+        "Description of Web Service Interfaces in XML.",
+        "Lightweight communication protocol for Web Service applications.",
+        "Registry Service for technical discovery of Web Services..",
+        "System architecture for Web Services."
+    ],
+    "correct": [2],
+    "type": "multiple"
     }
         
 ];
