@@ -49,7 +49,7 @@ const quizData = [
             "A single boundary line that is thin and dotted-dashed.",
             "A single boundary line that is thick and solid."
         ],
-        "correct": [0],
+        "correct": [0, 3],
         "type": "multiple"
     },
         {
