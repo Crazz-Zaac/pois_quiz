@@ -1,9 +1,9 @@
 const quizData = [
     {
-        question: "Which of the following tasks is typically executed by a back-end system?",
-        options: ["Script task", "User task", "Manual task", "Service task"],
-        correct: [4],
-        type: "multiple"
+        "question": "Which of the following tasks is typically executed by a back-end system?",
+        "options": ["Script task", "User task", "Manual task", "Service task"],
+        "correct": [4],
+        "type": "multiple"
     },
     {
         "question": "Which of the following gateway types can activate several outgoing paths?",
